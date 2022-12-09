@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./images/logo.svg" alt="spliter-logo" />
+    </header>
+    <main>
+      <div class="bill">
+        <div class="bill__details">
+          <div class="bill__amount">
+            <h3 class="bill-heading">Bill</h3>
+            <label for="bill-amount"></label>
+            <input
+              class="bill-input"
+              type="number"
+              id="bill-amount"
+              value="142.55"
+            />
+            <img class="dollar-icon" src="./images/icon-dollar.svg" alt="" />
+          </div>
+          <div class="bill__tip">
+            <label><h3 class="bill-heading">Select Tip %</h3></label>
+            <div class="tip-btns">
+              <div class="btn-cont">
+                <input
+                  class="input-tip"
+                  type="radio"
+                  name="tip-amount"
+                  value="1.5"
+                />
+                <label class="btn-tip" for="5">5%</label>
+              </div>
+              <div class="btn-cont">
+                <input
+                  class="input-tip"
+                  type="radio"
+                  name="tip-amount"
+                  value="1.10"
+                />
+                <label class="btn-tip" for="10">10%</label>
+              </div>
+              <div class="btn-cont">
+                <input
+                  class="input-tip"
+                  type="radio"
+                  name="tip-amount"
+                  value="1.15"
+                />
+                <label class="btn-tip active" for="15">15%</label>
+              </div>
+              <div class="btn-cont">
+                <input
+                  class="input-tip"
+                  type="radio"
+                  name="tip-amount"
+                  value="25"
+                />
+                <label class="btn-tip" for="25">25%</label>
+              </div>
+              <div class="btn-cont">
+                <input
+                  class="input-tip"
+                  type="radio"
+                  name="tip-amount"
+                  value="1.5"
+                />
+                <label class="btn-tip" for="50">50%</label>
+              </div>
+              <input
+                class="custom"
+                type="number"
+                name="tip-amount"
+                value=""
+                placeholder="custom"
+              />
+              <label for="custom"></label>
+            </div>
+          </div>
+          <div class="bill__people">
+            <h3 class="bill-heading">Number of People</h3>
+            <input class="numOfPeople" value="5" type="number" />
+            <img class="person-icon" src="./images/icon-person.svg" alt="" />
+          </div>
+        </div>
+        <div class="tip">
+          <div class="tip__person">
+            <div>
+              Tip Amount
+              <p class="perperson">/ person</p>
+            </div>
+            <span class="amount">$4.27</span>
+          </div>
+          <div class="total__person">
+            <div>
+              Total
+              <p class="perperson">/ person</p>
+            </div>
+            <span class="amount">$32.79</span>
+          </div>
+          <button class="btn-reset">Reset</button>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
